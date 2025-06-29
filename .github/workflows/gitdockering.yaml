@@ -34,6 +34,7 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: mmasyush/mtape
+          tags: type=raw,value=mtape prod.
 
       - name: Build and push Docker image
         id: push
