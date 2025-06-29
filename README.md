@@ -1,7 +1,7 @@
 # Dockerized Node.js Application with MongoDB and Nginx
 ## MTape is a containerized Node.js project composed with official Docker images for MongoDB and Nginx.
-## It was created as part of a test task for an SRE position at Stape 🙂
 
+### It was created as part of a test task for an SRE position at Stape 🙂
 ### Source : https://gist.github.com/tflash/ba8761c58dc21a5fcbc85c748f93988c
 
 ## 🔧 Features
