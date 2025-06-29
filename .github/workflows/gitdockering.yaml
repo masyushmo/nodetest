@@ -1,14 +1,8 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-#secrect update
-
 name: Publish Docker image
 
 on:
   push:
-    branches: [main]
+    branches: [docker]
 
 jobs:
   push_to_registry:
@@ -34,6 +28,7 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: mmasyush/mtape
+          tags: type=raw,value=mtape prod.
 
       - name: Build and push Docker image
         id: push

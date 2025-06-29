@@ -1,6 +1,6 @@
 services:
-  apk:
-    build: .
+  mtape:
+    build: ./
     container_name: website
     restart: unless-stopped
     #ports:
@@ -22,7 +22,7 @@ services:
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
     depends_on:
-      - apk
+      - mtape
 
   
 

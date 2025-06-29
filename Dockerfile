@@ -1,20 +1,20 @@
 #stage1
-FROM node:20-alpine AS builder
+FROM node:20-alpine AS build
 
-WORKDIR /app
+WORKDIR /mtape
 
 COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY . ./
 
 #stage2
-FROM node:20-alpine
+FROM node:20-alpine AS run
 
-WORKDIR /app
+WORKDIR /mtape
 
-COPY --from=builder /app .
+COPY --from=build /mtape .
 
 EXPOSE 8080
 
