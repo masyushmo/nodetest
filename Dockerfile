@@ -14,7 +14,7 @@ FROM node:20-alpine as run
 
 WORKDIR /app
 
-COPY --from=builder /app .
+COPY --from=build /app .
 
 EXPOSE 8080
 
