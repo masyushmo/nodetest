@@ -16,5 +16,5 @@
 
 ## 🚀 Getting Started
 - Clone the repository: git clone https://github.com/masyushmo/nodetest.git
-- Start the application: docker compose up --build
+- Start the application: docker compose up
 - Open in browser: http://localhost:8080 — wow that's it✨
